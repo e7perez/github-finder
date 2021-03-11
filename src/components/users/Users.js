@@ -26,4 +26,8 @@ const userStyle = {
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridGap: '1rem'
 }
+const mediaQuery = window.matchMedia('(max-width: 768px)');
+if (mediaQuery.matches) {
+    userStyle.gridTemplateColumns = 'repeat(1, 1fr)';
+}
 export default Users;
